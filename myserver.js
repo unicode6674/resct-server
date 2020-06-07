@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));//使用body parser用于解�
 //     next();
 // });
 
-// 加 登录后  测试用户
+// 加 登录后  测试用户  没有ssh用  https
 
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
