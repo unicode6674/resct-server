@@ -1,4 +1,4 @@
-const http = require('http');
+﻿const http = require('http');
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');//引入body parser用于解析post的body
@@ -15,7 +15,8 @@ app.use(bodyParser.urlencoded({ extended: true }));//使用body parser用于解�
 //     next();
 // });
 
-// 加 登录后
+// 加 登录后  测试用户
+
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With,Content-Type,Access-Token");
